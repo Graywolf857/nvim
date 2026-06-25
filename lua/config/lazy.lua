@@ -33,4 +33,3 @@ require("lazy").setup({
   checker = { enabled = true },
 })
 
-require('nvim-treesitter').install { 'kotlin', 'rust', 'javascript', 'zig', 'java', 'python', 'go'}
