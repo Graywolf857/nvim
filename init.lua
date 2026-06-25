@@ -3,9 +3,7 @@ local builtin = require('telescope.builtin')
 
 vim.opt.clipboard = "unnamedplus"
 
-
-vim.cmd.colorscheme("tokyonight-moon")
-
+vim.cmd.colorscheme "tokyonight-moon"
 
 
 
