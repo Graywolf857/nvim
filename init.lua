@@ -1,27 +1,11 @@
 require("config.lazy")
+require("config.keybinds")
 local builtin = require('telescope.builtin')
 
+local function enable_transparency()
+    vim.api.nvim_set_hl(0, "Normal", {bg = "none" })
+end
+
+enable_transparency()
+
 vim.opt.clipboard = "unnamedplus"
-
-vim.cmd.colorscheme "tokyonight-moon"
-
-
-
-vim.g.mapleader = ' '
-vim.keymap.set('n', '<leader>cd', ':Ex<CR>')
-vim.keymap.set('n', '<leader>f', builtin.find_files, {desc = 'Telescope find files'})
-vim.keymap.set('n', '<leader>o', 'o<ESC>')
-
-vim.o.tabstop = 4
-vim.o.shiftwidth = 4
-vim.o.expandtab = true
-
-
-vim.opt.number = true
-vim.opt.relativenumber = true
-
-
-
-
-
-
